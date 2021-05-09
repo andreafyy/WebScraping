@@ -179,8 +179,6 @@ The next bar chart shows the number of films of Top100 movies of 2020 per each F
 
 ## BeautifulSoup Scraper
 
-Run command: python soup.py
-
 Run command: python soup.py 
 
 Total time taken is: 158
