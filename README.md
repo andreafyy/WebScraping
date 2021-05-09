@@ -167,4 +167,4 @@ Run command: python selenium.py
 | Scrapy         | ~ 16                      |
 | Selenium       | ~ 500                     |
 
-Scrapy is the fastest method for extracting movie information. It is followed by Beautiful Soup which takes 10 times more time. Selenium is the slowest method for such typd of scraping requirements. 
+Scrapy is the fastest method for extracting movie information. It is followed by Beautiful Soup which takes 10 times more time. Selenium is the slowest method for such type of scraping requirements. 
