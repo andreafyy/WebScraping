@@ -1,5 +1,8 @@
 # WebScraping
 
+<<<<<<< main
+# WebScraping
+
 
 <img src = "Archive/320px-Rotten_Tomatoes_logo.svg.png">
 
@@ -138,3 +141,34 @@ The next bar chart shows the number of films of Top100 movies of 2020 per each F
 | Selenium       | Divij                     |
 | Github         | Andrea                    |
 | Project Report | Andrea                    |
+
+# Instruction how to run scrapers:
+
+## BeautifulSoup Scraper
+
+Run command: python soup.py
+
+## Scrapy Scraper
+
+Spider 1:
+Run command: scrapy crawl links -o links.csv
+Time to run (seconds):  1.10654
+
+Spider 2:
+Run command: scrapy crawl movies -o movies.csv
+Time to run (seconds): 14.181442
+
+## Selenium Scraper
+
+Run command: python selenium.py
+
+# Run Time Analysis
+
+| Method         | Time (in seconds)         |
+|----------------|---------------------------|
+| Beautiful Soup | ~ 120                     |
+| Scrapy         | ~ 16                      |
+| Selenium       | ~ 500                     |
+
+Scrapy is the fastest method for extracting movie information. It is followed by Beautiful Soup which takes 10 times more time. Selenium is the slowest method for such typd of scraping requirements. 
+>>>>>>> main
