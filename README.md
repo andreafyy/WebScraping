@@ -1,7 +1,7 @@
 # WebScraping
 
 
-![](320px-Rotten_Tomatoes_logo.svg.png)
+![](Archive/320px-Rotten_Tomatoes_logo.svg.png)
 
 # Rotten Tomatoes WebScraper
 **Project purpose:** Web Scraping and Social Media Scraping Project prepared at University of Warsaw, Data Science and Business Analytics Master's Degree Program in Faculty of Economic Sciences.&nbsp;
@@ -25,7 +25,7 @@ The detailed described code for the first WebScraper can be seen in the file ```
 
 First, our BeautifulSoup WebScraper downloads ```Rotten Tomatoes``` ```https://www.rottentomatoes.com/top/bestofrt/``` with the list of TOP 100 movies of all time page using the Python ```Requests``` library. By ```GET``` request to a web server WebScraper downloads the HTML contents and then using ```BeautifulSoup``` library parses the document and extracts the text.
 
-![](Zrzut ekranu 2021-05-9 o 13.07.02.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 13.07.02.png)
 
 ```{r}
 url = "https://www.rottentomatoes.com/top/bestofrt/"
@@ -43,16 +43,16 @@ for i in temp:
 
 Each link to a particular movie page has a similar structure, ```url = "https://www.rottentomatoes.com" + href"``` and thus ```href``` is used finding the links to the movie's page. For each link defined in this way, first an html copy of the page is requested using the link, then parsed and saved into previously created dictionary with movie names scrapped from ```Score Board``` with ```h1``` tag and attribute ```data-qa = "score-panel-movie-title"```.
 
-![](Zrzut ekranu 2021-05-9 o 15.26.07.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 15.26.07.png)
 
 
 Using loop WebScraper is visiting each link in the Top 100 movies and extracting details such as ```Genre```, ```Original Language```, ```Director```, ```Producer``` etc. which will later be used for elementary analysis. WebScraper navigates ```Movie Info``` section for each movie by its ```ul``` tag with class ```content-meta info``` and then iterates over each label and its value having ```data-qa``` attribute to finally saves extracted values and append dictionary to the ```Pandas``` dataframe. In the end dataframe is saved as ```CSV``` file and the time it tooks to scrape all data is displayed in the terminal window by using ```Time``` library.
 
-![](Zrzut ekranu 2021-05-9 o 15.15.49.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 15.15.49.png)
 
 
 Obtained output in a ```.CSV``` format.
-![](Zrzut ekranu 2021-05-9 o 14.45.31.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 14.45.31.png)
 
 ## Scrapy
 
@@ -91,7 +91,7 @@ for i in range(100):
     r.append(d)
 ```
 
-![](Zrzut ekranu 2021-05-9 o 17.02.20.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 17.02.20.png)
 
 Next, our WebScraper using loop is visiting each link in the Top 100 movies, extracts movie names navigating them by ```XPaths``` and store together with links in the dictionary which will be appended to the dataframe with previously extracted movie details. Finally dataframe is saved as ```.CSV``` file and the time it tooks to scrape all data is displayed in the terminal window.
 
@@ -114,18 +114,18 @@ All three WebScrapers: ```Beautiful Soup```, ```Scrapy``` and ```Selenium``` scr
 Thus the goal of the project that all of the scrapers should scrap the same information from the domain of our choice was fulfilled.
 Down below there is sample table of scraped data attached for each movie of Top100 movies of 2020.
 
-![](Zrzut ekranu 2021-05-9 o 18.41.27.png)
+![](Archive/Zrzut ekranu 2021-05-9 o 18.41.27.png)
 
 ****
 # Basic Data Analysis
 
 The main aim of this section is to show how our collected data of Top100 movies of 2020 from Rotten Tomatoes can be further analyzed.In the following bar charts showing based on scrapped data, we can see that the vast majority of the Top 100 movies in 2020 are originally in English. 
 
-![](table1.png)
+![](Archive/table1.png)
 
 The next bar chart shows the number of films of Top100 movies of 2020 per each Film Director and as we can see Alfred Hitchcock and Steven Spielberg leads the list with 4 and 3 films respectively.
 
-![](table2.png)
+![](Archive/table2.png)
 
 ****
 
