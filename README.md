@@ -53,7 +53,7 @@ Obtained output in a ```.CSV``` format.
 <img src = "Archive/Zrzut ekranu 2021-05-9 o 14.45.31.png">
 
 ## Scrapy
-The Spider classes are the most important part of the Scrapy WebScraper that define the scraper-crawler mechanism as it passes through the web page. Similar to the other WebScrapers described source code was also saved in the separate files ```spider_1.py``` and ```spider_2.py To run code it is necessary to import ```scrapy``` and ```re```.
+The Spider classes are the most important part of the Scrapy WebScraper that define the scraper-crawler mechanism as it passes through the web page. Similar to the other WebScrapers described source code was also saved in the separate files ```spider_1.py``` and ```spider_2.py``` To run code it is necessary to import ```scrapy``` and ```re```.
 
 First, the Spider class allows us to define the start URLs from which, by default, our crawler will start browsing websites. They are defined as a list in the ```start_urls``` variable. In our case it will be ``` https://www.rottentomatoes.com/top/bestofrt/```. Then ```parse``` function defines how data is extracted from the page - links of each movie are navigated by defined ```XPath``` and then extracted to a ```links.csv``` file used by ```spider_2```.
 
