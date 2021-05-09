@@ -48,7 +48,7 @@ Each link to a particular movie page has a similar structure, ```url = "https://
 
 Using loop WebScraper is visiting each link in the Top 100 movies and extracting details such as ```Genre```, ```Original Language```, ```Director```, ```Producer``` etc. which will later be used for elementary analysis. WebScraper navigates ```Movie Info``` section for each movie by its ```ul``` tag with class ```content-meta info``` and then iterates over each label and its value having ```data-qa``` attribute to finally saves extracted values and append dictionary to the ```Pandas``` dataframe. In the end dataframe is saved as ```CSV``` file and the time it tooks to scrape all data is displayed in the terminal window by using ```Time``` library.
 
-<img src = "Archive/Zrzut ekranu 2021-05-9 o 15.15.49.png>
+<img src = "Archive/Zrzut ekranu 2021-05-9 o 15.15.49.png">
 
 
 Obtained output in a ```.CSV``` format.
