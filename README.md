@@ -1,6 +1,3 @@
----
-output:
----
 
 ![](320px-Rotten_Tomatoes_logo.svg.png)
 
