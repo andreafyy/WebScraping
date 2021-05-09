@@ -19,7 +19,7 @@ Our project repository includes all the required files arranged in a logical str
 # WebScraper mechanisms
 
 ## Beautiful Soup
-The detailed described code for the first WebScraper can be seen in the file ```BeautifulSoup.py```. The tool uses libraries such as: ```BeautifulSoup```, ```Requests```, ```Pandas```, ```Time``` and regular expression package ```Re``` thus it is important to download them before running the code using ```pip install``` command. Libraries will be described in detail later, taking into account the functions in the tool that were obtained with their usage.
+The detailed described code for the first WebScraper can be seen in the file ```soup.py```. The tool uses libraries such as: ```BeautifulSoup```, ```Requests```, ```Pandas```, ```Time``` and regular expression package ```Re``` thus it is important to download them before running the code using ```pip install``` command. Libraries will be described in detail later, taking into account the functions in the tool that were obtained with their usage.
 
 First, our BeautifulSoup WebScraper downloads ```Rotten Tomatoes``` ```https://www.rottentomatoes.com/top/bestofrt/``` with the list of TOP 100 movies of all time page using the Python ```Requests``` library. By ```GET``` request to a web server WebScraper downloads the HTML contents and then using ```BeautifulSoup``` library parses the document and extracts the text.
 
@@ -54,10 +54,10 @@ Obtained output in a ```.CSV``` format.
 
 ## Scrapy
 
-TBC
+
 
 ## Selenium
-Similar to the previous WebScraper, for Selenium, described source code was also saved in the file ```Scrapy.py```. The design of this tool uses ```Selenium``` framework from which  ```Webdriver``` for Chrome is imported, as well as ```ActionChains``` to automate low-level interactions such as mouse movements,  ```NoSuchElementException``` to handle with data which may be not present on a page and dict subclass ```defaultdict``` from ```Colections``` that calls a factory function to supply missing values . Additionally, libraries such as ```Time```, ```Pandas``` and ```Re``` are used which are necessary to run the code.
+Similar to the previous WebScraper, for Selenium, described source code was also saved in the file ```bot.py```. The design of this tool uses ```Selenium``` framework from which  ```Webdriver``` for Chrome is imported, as well as ```ActionChains``` to automate low-level interactions such as mouse movements,  ```NoSuchElementException``` to handle with data which may be not present on a page and dict subclass ```defaultdict``` from ```Colections``` that calls a factory function to supply missing values . Additionally, libraries such as ```Time```, ```Pandas``` and ```Re``` are used which are necessary to run the code.
 
 The tool starts with creating a browser control object ```Webdriver``` and then enters the page using the ```GET``` method.
 
