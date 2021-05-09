@@ -171,9 +171,9 @@ The next bar chart shows the number of films of Top100 movies of 2020 per each F
 |----------------|---------------------------|
 | Beautiful Soup | Divij, Andrea             |
 | Scrapy         | Divij                     |
-| Selenium       | Divij                     |
+| Selenium       | Divij, Andrea             |
 | Github         | Andrea                    |
-| Project Report | Andrea                    |
+| Project Report | Andrea, Divij             |
 
 # Instruction how to run scrapers:
 
