@@ -1,0 +1,7 @@
+Spider 1:
+Run command: scrapy crawl links -o links.csv
+Time to run (seconds):  1.10654
+
+Spider 2:
+Run command: scrapy crawl movies -o movies.csv
+Time to run (seconds): 14.181442
