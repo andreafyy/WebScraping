@@ -14,8 +14,6 @@ The internet is an absolutely huge source of data that we can collect in many wa
 # GitHub repository structure
 Our project repository includes all the required files arranged in a logical structure including the the imposed requirements according to which the project was prepared saved as ``project_rules.pdf``, described source codes for each of the individual WebScraper, the obtained output and a report detailing the mechanisms, their comparison and analysis of the results. 
 
-TBD ADD PHOTO of a github structure and file names in the text!!!!!!!
-
 ****
 
 # WebScraper mechanisms
