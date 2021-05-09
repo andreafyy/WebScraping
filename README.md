@@ -1,8 +1,5 @@
 ---
 output:
-  html_document: default
-  word_document: default
-  pdf_document: default
 ---
 
 ![](320px-Rotten_Tomatoes_logo.svg.png)
