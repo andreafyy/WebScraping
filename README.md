@@ -180,26 +180,35 @@ The next bar chart shows the number of films of Top100 movies of 2020 per each F
 
 Run command: python soup.py
 
+Run command: python soup.py 
+
+Total time taken is: 158
+
+
 ## Scrapy Scraper
 
 Spider 1:
 Run command: scrapy crawl links -o links.csv
-Time to run (seconds):  1.10654
+
+Time to run (seconds):  1.11
 
 Spider 2:
 Run command: scrapy crawl movies -o movies.csv
-Time to run (seconds): 14.181442
+
+Time to run (seconds): 14.20
 
 ## Selenium Scraper
 
 Run command: python selenium.py
 
+Total time taken is: 521
+
 # Run Time Analysis
 
 | Method         | Time (in seconds)         |
 |----------------|---------------------------|
-| Beautiful Soup | ~ 120                     |
+| Beautiful Soup | ~ 160                     |
 | Scrapy         | ~ 16                      |
-| Selenium       | ~ 500                     |
+| Selenium       | ~ 520                     |
 
 Scrapy is the fastest method for extracting movie information. It is followed by Beautiful Soup which takes 10 times more time. Selenium is the slowest method for such type of scraping requirements. 
