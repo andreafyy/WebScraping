@@ -67,8 +67,29 @@ First, the Spider class allows us to define the start URLs from which, by defaul
             yield l
 ```
 
+In the case of Scrapy, the downloaded data is called ```Items``` and by declaring ```Movies class``` we determine what data from the page will be scrape:
 
+```{r}
+# Declaring Movies class
+class Movies(scrapy.Item):
+    Name = scrapy.Field()
+    Link = scrapy.Field()
+    Rating = scrapy.Field()
+    Genre = scrapy.Field()
+    Original_Language = scrapy.Field()
+    Director = scrapy.Field()
+    Producer = scrapy.Field()
+    Writer = scrapy.Field()
+    Release_Date_Streaming = scrapy.Field()
+    Runtime = scrapy.Field()
+    Production_Co = scrapy.Field()
+    Aspect_Ratio = scrapy.Field()
+    Sound_Mix = scrapy.Field()
+    Release_Date_Theaters = scrapy.Field()
+    Box_Office = scrapy.Field()
+```
 
+Then, after defining ```LinksSpider```, it will be opening links for each individual movie, previously stored in the ```links.csv``` file and scrape detailed data navigated by ```XPaths```. 
 
 ## Selenium
 Similar to the previous WebScraper, for Selenium, described source code was also saved in the file ```bot.py```. The design of this tool uses ```Selenium``` framework from which  ```Webdriver``` for Chrome is imported, as well as ```ActionChains``` to automate low-level interactions such as mouse movements,  ```NoSuchElementException``` to handle with data which may be not present on a page and dict subclass ```defaultdict``` from ```Colections``` that calls a factory function to supply missing values . Additionally, libraries such as ```Time```, ```Pandas``` and ```Re``` are used which are necessary to run the code.
