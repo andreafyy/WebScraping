@@ -146,7 +146,7 @@ All three WebScrapers: ```Beautiful Soup```, ```Scrapy``` and ```Selenium``` scr
 ```
 Thus the goal of the project that all of the scrapers should scrap the same information from the domain of our choice was fulfilled. It is also worth to mention that we did not include a boolean parameter to True at the beginning of codes because by the definition our webpage conatins list of Top100 movies of 2020.
 
-Down below there is sample table of scraped data attached for each movie of Top100 movies of 2020.
+Down below there is a sample table of scraped data attached for each movie of the ```Top100 movies of 2020``` list.
 
 <img src = "Archive/Zrzut ekranu 2021-05-9 o 18.41.27.png">
 
