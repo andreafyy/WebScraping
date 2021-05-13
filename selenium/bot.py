@@ -50,7 +50,7 @@ for i in range(100):
     r.append(d)
 
 # Setting up pandas dataframe
-df = pd.DataFrame(columns=['Name', 'Link', 'Rating', 'Box Office', 'Genre', 'Original Language', 'Director', 'Producer', 'Writer',
+df = pd.DataFrame(columns=['Name', 'Link', 'Rating', 'Box Office (Gross USA)', 'Genre', 'Original Language', 'Director', 'Producer', 'Writer',
                            'Release Date (Streaming)', 'Release Date (Theaters)', 'Runtime', 'Production Co', 'Aspect Ratio', 'Sound Mix'])
 
 # Looping around all links of movies in list and extracting movie specific information
