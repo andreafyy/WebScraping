@@ -28,7 +28,7 @@ for h in href:
     links.append("https://www.rottentomatoes.com" + h)
 
 # Creating a pandas dataframe of the extracted values
-df = pd.DataFrame(columns=['Name', 'Link', 'Rating', 'Box Office', 'Genre', 'Original Language', 'Director', 'Producer', 'Writer',
+df = pd.DataFrame(columns=['Name', 'Link', 'Rating', 'Box Office (Gross USA)', 'Genre', 'Original Language', 'Director', 'Producer', 'Writer',
                            'Release Date (Streaming)', 'Release Date (Theaters)', 'Runtime', 'Production Co', 'Aspect Ratio', 'Sound Mix'])
 
 # Using loop to visit each link in top 100 movies and extracting information
